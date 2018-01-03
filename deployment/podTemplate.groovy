@@ -7,7 +7,7 @@ podTemplate(label: 'docker', namespace: 'default',
   volumes: [hostPathVolume(hostPath: '/var/run/docker.sock', mountPath: '/var/run/docker.sock')]
   ) {
 
-  def gitSrc = 'https://github.com/jconallen/SumApp.git'
+  def gitSrc = 'https://github.com/zippy-the-llama/SumApp.git'
   def dockerRegistry = 'https://mycluster.icp:8500'
   def image = 'mycluster.icp:8500/demo/sumapp'
   def deployment = 'deployment/sumapp-deploy.yml'
