@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: liberty4all
+  name: sumapp
   labels:
-    app: liberty4all
+    app: sumapp
 spec:
   type: NodePort
   ports:
     - port: 80
       targetPort: 9080
   selector:
-    app: liberty4all
+    app: sumapp
