@@ -29,7 +29,7 @@ public class SumServlet extends HttpServlet {
 		int op1=0;
 		int op2=0;
 		
-		String msg = null;
+		String msg = "";
 		
 		try {
 			op1 = Integer.parseInt(param_op1);
